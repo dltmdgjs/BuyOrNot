@@ -14,6 +14,7 @@
 ### 리뷰 크롤링 화면
 <img width="1089" alt="img1" src="https://github.com/user-attachments/assets/1122a2a2-aff7-4a40-a7d4-95e22a8852c7">
 <img width="1091" alt="img2" src="https://github.com/user-attachments/assets/6e9c563d-f2a8-4199-ab66-a5f6bbab06f6">  
+
 - url 입력 후 제품 페이지 내 리뷰를 가져옴
 
 ### GPT 모델 평가
@@ -22,10 +23,12 @@
 
 ### 생성된 엑셀 파일
 <img width="739" alt="img4" src="https://github.com/user-attachments/assets/496b64de-8a67-4a1d-a0a1-710e22a1a441">  
+
 - gpt 모델로 분석한 결과는 엑셀 파일로 저장되며, 각 리뷰에 대한 긍정 및 부정 평가가 담김.
 
 ### 리뷰 크롤링 (요청 시간 만료)
 <img width="1097" alt="img5" src="https://github.com/user-attachments/assets/8e1a4cc9-1254-4aba-922d-ab8aea7f3e44">  
+
 - time out으로 인해 실패한 화면
 
 
