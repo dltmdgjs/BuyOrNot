@@ -97,7 +97,7 @@ def analyze_review(review_text):
 3. 저장할 엑셀 파일명 변경.
 
 ## References
-[text](https://github.com/JaehyoJJAng/Coupang-Review-Crawling/tree/main)
+[JaehyoJJAng](https://github.com/JaehyoJJAng/Coupang-Review-Crawling/tree/main)
 
 ## License
 MIT License
