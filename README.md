@@ -13,17 +13,20 @@
 
 ### 리뷰 크롤링 화면
 <img src="/img/img1.png">
-
 <img src="/img/img2.png">
+- url 입력 후 제품 페이지 내 리뷰를 가져옴
 
 ### GPT 모델 평가
 <img src="/img/img3.png">
 
+
 ### 생성된 엑셀 파일
 <img src="/img/img4.png">
+- gpt 모델로 분석한 결과는 엑셀 파일로 저장되며, 각 리뷰에 대한 긍정 및 부정 평가가 담김.
 
 ### 리뷰 크롤링 (요청 시간 만료)
 <img src="/img/img5.png">
+- time out으로 인해 실패한 화면
 
 
 
@@ -31,8 +34,8 @@
 ## GPT API 키
 
 ### 1. OPENAI API 사이트에 로그인 후 API 키 발급
-[text](https://openai.com/index/openai-api/)
-- (주의!) 애플 아이디로 로그인 할 경우 '나의 이메일 가리기' 사용 중이라면, 추후 로그인 시 인증 메일 수신 불가 문제가 발생하여 로그인하지 못하니 다른 계정으로 계정 생성 할 것! (저도 이 문제를 알고 싶지 않았습니다..)
+[OPENAI API](https://openai.com/index/openai-api/)
+- (주의!) 애플 아이디로 로그인 할 경우 '나의 이메일 가리기' 사용 중이라면, 추후 로그인 시 인증 메일 수신 불가 문제가 발생하여 로그인하지 못하니 다른 계정으로 계정 생성할 것! (저도 이 문제를 알고 싶지 않았습니다..)
 - (주의!) API 키를 발급 받으면 복사해서 안전한 곳에 저장할 것! (키는 한번만 보여줍니다.)
 - (참고) API 발급은 무료이지만, 사용을 위해선 결제 필요.
 
@@ -40,7 +43,7 @@
 
 ```
 pip install openai python-dotenv
-```
+```shell
 
 ### 3. .env 파일에 API 키 저장
 ```
@@ -80,18 +83,18 @@ def analyze_review(review_text):
 ...
 ...
 ...
-```
+```python
 - .env 파일로부터 api키를 불러와 저장
 - max_tokens 값을 증가시켜 gpt의 답변 길이를 늘릴 수 있음.
 
 ## 크롤링 코드
-[text](https://github.com/JaehyoJJAng/Coupang-Review-Crawling/tree/main)
+[JaehyoJJAng](https://github.com/JaehyoJJAng/Coupang-Review-Crawling/tree/main)
 - 리뷰 크롤링은 위를 참조 및 변경하였음.
 
-### 주요 변경 사항 
+### 주요 변경 사항
 1. 크롤링할 대상 축소 (리뷰요소만 크롤링 및 최대 크롤링 개수를 10개로 설정.)
-2. 딜레이 시간을 랜덤하게 변경 (쿠팡의 반복적인 요청 거절로 인한 변경.)
-3. 저장할 엑셀 파일명 변경. 
+2. 딜레이 시간을 랜덤하게 하도록 변경 (쿠팡의 반복적인 요청 거절로 인한 변경.)
+3. 저장할 엑셀 파일명 변경.
 
 ## References
 [text](https://github.com/JaehyoJJAng/Coupang-Review-Crawling/tree/main)
@@ -100,5 +103,5 @@ def analyze_review(review_text):
 MIT License
 
 ## 기타(참고사항)
-- API 키도 같이 업로드 하고 싶었으나, 개인 계정을 통해 비용을 지불하고 사용하는 것이므로 유출 방지를 위해 gitignore하였음.
-- 많은 수의 리뷰를 크롤링하면 신뢰성이 높아질 수 있지만, 쿠팡 측에서 계속해서 다양한 방법으로 요청을 차단하고 있고, 그 이유가 있다고 생각하였기 때문에 소량(10개)만 크롤링하였음.
+- API 키도 같이 업로드 하고 싶었으나, 개인 계정을 통해 비용을 지불하고 사용하는 것이므로 유출 방지를 위해 gitignore 하였습니다.
+- 많은 수의 리뷰를 분석하면 신뢰성이 높아질 수 있지만, 쿠팡 측에서 계속해서 다양한 방법으로 요청을 차단하고 있고, 그렇게 하는 이유가 있다고 생각하였기 때문에 소량(10개)만 크롤링하였습니다.
