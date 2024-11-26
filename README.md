@@ -6,31 +6,26 @@
 - 프로그램을 실행하여 제품의 url을 넣어보세요. gpt가 대신 결정해줄 겁니다.
 
 ## 프로그램 실행 화면
-<img width="1092" alt="img0" src="https://github.com/user-attachments/assets/c641ab3c-8e19-4ae0-ae4b-ad9551001ce5">
-<img width="1089" alt="img1" src="https://github.com/user-attachments/assets/1122a2a2-aff7-4a40-a7d4-95e22a8852c7">
-<img width="1091" alt="img2" src="https://github.com/user-attachments/assets/6e9c563d-f2a8-4199-ab66-a5f6bbab06f6">
-<img width="561" alt="img3" src="https://github.com/user-attachments/assets/b11866fa-c51a-49bc-b5a7-985bb54434b4">
-<img width="739" alt="img4" src="https://github.com/user-attachments/assets/496b64de-8a67-4a1d-a0a1-710e22a1a441">
-<img width="1097" alt="img5" src="https://github.com/user-attachments/assets/8e1a4cc9-1254-4aba-922d-ab8aea7f3e44">
 - (vscode의 터미널 창을 통해 실행한 화면입니다.)
+
 ### 실행 첫 화면(제품 url 입력)
-<img src="/img/img0.png">
+<img width="1092" alt="img0" src="https://github.com/user-attachments/assets/c641ab3c-8e19-4ae0-ae4b-ad9551001ce5">
 
 ### 리뷰 크롤링 화면
-<img src="/img/img1.png">
-<img src="/img/img2.png">
+<img width="1089" alt="img1" src="https://github.com/user-attachments/assets/1122a2a2-aff7-4a40-a7d4-95e22a8852c7">
+<img width="1091" alt="img2" src="https://github.com/user-attachments/assets/6e9c563d-f2a8-4199-ab66-a5f6bbab06f6">
 - url 입력 후 제품 페이지 내 리뷰를 가져옴
 
 ### GPT 모델 평가
-<img src="/img/img3.png">
+<img width="561" alt="img3" src="https://github.com/user-attachments/assets/b11866fa-c51a-49bc-b5a7-985bb54434b4">
 
 
 ### 생성된 엑셀 파일
-<img src="/img/img4.png">
+<img width="739" alt="img4" src="https://github.com/user-attachments/assets/496b64de-8a67-4a1d-a0a1-710e22a1a441">
 - gpt 모델로 분석한 결과는 엑셀 파일로 저장되며, 각 리뷰에 대한 긍정 및 부정 평가가 담김.
 
 ### 리뷰 크롤링 (요청 시간 만료)
-<img src="/img/img5.png">
+<img width="1097" alt="img5" src="https://github.com/user-attachments/assets/8e1a4cc9-1254-4aba-922d-ab8aea7f3e44">
 - time out으로 인해 실패한 화면
 
 
