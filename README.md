@@ -94,7 +94,7 @@ def analyze_review(review_text):
 ### 주요 변경 사항
 1. 크롤링할 대상 축소 (리뷰요소만 크롤링 및 최대 크롤링 개수를 10개로 설정.)
 2. 딜레이 시간을 랜덤하게 하도록 변경 (쿠팡의 반복적인 요청 거절로 인한 변경.)
-3. 저장할 엑셀 파일명 변경.
+3. 저장할 엑셀 파일명 변경 및 저장 형식 변경.
 
 ## References
 [JaehyoJJAng](https://github.com/JaehyoJJAng/Coupang-Review-Crawling/tree/main)
