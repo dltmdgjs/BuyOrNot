@@ -105,3 +105,5 @@ MIT License
 ## 기타(참고사항)
 - API 키도 같이 업로드 하고 싶었으나, 개인 계정을 통해 비용을 지불하고 사용하는 것이므로 유출 방지를 위해 gitignore 하였습니다.
 - 많은 수의 리뷰를 분석하면 신뢰성이 높아질 수 있지만, 쿠팡 측에서 계속해서 다양한 방법으로 요청을 차단하고 있고, 그렇게 하는 이유가 있다고 생각하였기 때문에 소량(10개)만 크롤링하였습니다.
+
+![footer](https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=120&section=footer)
