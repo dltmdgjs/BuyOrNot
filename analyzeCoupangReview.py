@@ -114,6 +114,3 @@ def run_review_analysis():
 
     return "최종 구매 결정 : " + final_decision + ", \n" + reason
 
-# 실행
-if __name__ == "__main__":
-    run_review_analysis()
