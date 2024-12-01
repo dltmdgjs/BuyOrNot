@@ -113,7 +113,8 @@ def analyze_review(review_text):
 3. 저장할 엑셀 파일명 변경 및 저장 형식 변경.
 
 ## References
-[JaehyoJJAng](https://github.com/JaehyoJJAng/Coupang-Review-Crawling/tree/main)
+[JaehyoJJAng](https://github.com/JaehyoJJAng/Coupang-Review-Crawling/tree/main)  
+
 [OPENAI API](https://openai.com/index/openai-api/)
 
 ## License
