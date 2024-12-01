@@ -5,13 +5,13 @@
 - Buy Or Not? 프로그램은 우리나라 인기 쇼핑몰 사이트인 쿠팡(Coupang)의 제품 리뷰를 크롤링하여, gpt모델을 사용해 구매 의사를 돕는 프로그램입니다.
 - 프로그램을 실행하여 제품의 url을 넣어보세요. gpt가 대신 결정해줄 겁니다.
 
-## 프로그램 실행 화면 1
-- (vscode의 터미널 창을 통해 실행한 화면입니다.)
+## 프로그램 수행 단계
+- (단계별 수행 결과를 보여주기 위한 화면입니다. 실제 프로그램 실행 화면은 아래에 있습니다.)
 
 ### 실행 첫 화면(제품 url 입력)
 <img width="1092" alt="img0" src="https://github.com/user-attachments/assets/c641ab3c-8e19-4ae0-ae4b-ad9551001ce5">
 
-### 리뷰 크롤링 화면
+### 리뷰 크롤링
 <img width="1089" alt="img1" src="https://github.com/user-attachments/assets/1122a2a2-aff7-4a40-a7d4-95e22a8852c7">
 <img width="1091" alt="img2" src="https://github.com/user-attachments/assets/6e9c563d-f2a8-4199-ab66-a5f6bbab06f6">  
 
@@ -31,7 +31,7 @@
 
 - time out으로 인해 실패한 화면
 
-## 프로그램 실행 화면 2
+## 프로그램 실행 화면
 - (streamlit을 통해 실행한 웹화면입니다.)
 
 ### 실행 - 터미널에 입력
