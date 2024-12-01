@@ -9,25 +9,25 @@
 - (단계별 수행 결과를 보여주기 위한 화면입니다. 실제 프로그램 실행 화면은 아래에 있습니다.)
 
 ### 실행 첫 화면(제품 url 입력)
-<img width="1092" alt="img0" src="https://github.com/user-attachments/assets/c641ab3c-8e19-4ae0-ae4b-ad9551001ce5">
+<img width="850" alt="img0" src="https://github.com/user-attachments/assets/c641ab3c-8e19-4ae0-ae4b-ad9551001ce5">
 
 ### 리뷰 크롤링
-<img width="1089" alt="img1" src="https://github.com/user-attachments/assets/1122a2a2-aff7-4a40-a7d4-95e22a8852c7">
-<img width="1091" alt="img2" src="https://github.com/user-attachments/assets/6e9c563d-f2a8-4199-ab66-a5f6bbab06f6">  
+<img width="850" alt="img1" src="https://github.com/user-attachments/assets/1122a2a2-aff7-4a40-a7d4-95e22a8852c7">
+<img width="850" alt="img2" src="https://github.com/user-attachments/assets/6e9c563d-f2a8-4199-ab66-a5f6bbab06f6">  
 
 - url 입력 후 제품 페이지 내 리뷰를 가져옴
 
 ### GPT 모델 평가
-<img width="561" alt="img3" src="https://github.com/user-attachments/assets/b11866fa-c51a-49bc-b5a7-985bb54434b4">
+<img width="600" alt="img3" src="https://github.com/user-attachments/assets/b11866fa-c51a-49bc-b5a7-985bb54434b4">
 
 
 ### 생성된 엑셀 파일
-<img width="739" alt="img4" src="https://github.com/user-attachments/assets/496b64de-8a67-4a1d-a0a1-710e22a1a441">  
+<img width="850" alt="img4" src="https://github.com/user-attachments/assets/496b64de-8a67-4a1d-a0a1-710e22a1a441">  
 
 - gpt 모델로 분석한 결과는 엑셀 파일로 저장되며, 각 리뷰에 대한 긍정 및 부정 평가가 담김.
 
 ### 리뷰 크롤링 (요청 시간 만료)
-<img width="1097" alt="img5" src="https://github.com/user-attachments/assets/8e1a4cc9-1254-4aba-922d-ab8aea7f3e44">  
+<img width="850" alt="img5" src="https://github.com/user-attachments/assets/8e1a4cc9-1254-4aba-922d-ab8aea7f3e44">  
 
 - time out으로 인해 실패한 화면
 
@@ -39,15 +39,15 @@
 streamlit run "main.py 경로"
 ```  
 
-<img width="736" alt="img6" src="https://github.com/user-attachments/assets/09ab87c7-af2c-4e32-8d30-761d1907d91e">
+<img width="850" alt="img6" src="https://github.com/user-attachments/assets/09ab87c7-af2c-4e32-8d30-761d1907d91e">
 
-<img width="736" alt="img7" src="https://github.com/user-attachments/assets/1debdaa4-29d7-4789-8ad6-ba3c38b84c88">
+<img width="850" alt="img7" src="https://github.com/user-attachments/assets/1debdaa4-29d7-4789-8ad6-ba3c38b84c88">
 
 ### URL 입력
-<img width="736" alt="img8" src="https://github.com/user-attachments/assets/3053e639-cfab-4af1-97c7-4c39dd89ce72">
+<img width="850" alt="img8" src="https://github.com/user-attachments/assets/3053e639-cfab-4af1-97c7-4c39dd89ce72">
 
 ### 결과 출력
-<img width="736" alt="img9" src="https://github.com/user-attachments/assets/99e0a087-0c06-4c78-ae18-9937864389b3">
+<img width="850" alt="img9" src="https://github.com/user-attachments/assets/99e0a087-0c06-4c78-ae18-9937864389b3">
 
 
 ## GPT API 키
