@@ -49,7 +49,7 @@ class Coupang:
     def __init__(self) -> None:
         self.base_review_url: str = "https://www.coupang.com/vp/product/reviews"
         self.sd = SaveData()
-        self.retries = 10
+        self.retries = 2
         # 웹 드라이버 헤더 정보(사이트 차단 방지)
         self.headers = {
             "accept": "*/*",
@@ -79,9 +79,9 @@ class Coupang:
         return (int(re.sub("[^0-9]", "", soup.select("span.count")[0].text.strip())))
 
     
-    def start(self) -> None:
+    def start(self, url) -> None:
         self.sd.create_directory()
-        URL: str = self.input_review_url()
+        URL: str = url
         self.headers["Referer"] = URL
         prod_code: str = self.get_product_code(url=URL)
 
@@ -158,6 +158,7 @@ class Coupang:
                 else:
                     print(f"최대 요청 만료! 다시 실행하세요.")
                     sys.exit()
+                    
 
    
     def input_review_url(self) -> str:
@@ -191,3 +192,4 @@ class SaveData:
 
     def __del__(self) -> None:
         self.wb.close()
+

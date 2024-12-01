@@ -12,8 +12,8 @@ def analyze_review_with_gpt(review_text, api_key):
         response = openai.ChatCompletion.create(
             model="gpt-3.5-turbo",
             messages=[
-                {"role": "system", "content": "리뷰 분석을 돕는 역할을 해."},
-                {"role": "user", "content": f"이 리뷰의 감정을 분석해줘, 대답 형식은 다음과 같이 해줘. [긍정/부정/중립 중 1개] : [짧은 이유 한 문장)]. 다음은 너가 분석할 리뷰야 : '{review_text}'"}
+                {"role": "system", "content": "리뷰 분석을 돕는 역할을 해주세요."},
+                {"role": "user", "content": f"이 리뷰의 감정을 분석해주세요, 대답 형식은 다음과 같이 해주세요. [긍정/부정/중립 중 1개] : [짧은 이유 한 문장)]. 다음은 분석할 리뷰입니다 : '{review_text}'"}
             ],
             max_tokens=50
         )
@@ -50,12 +50,13 @@ def show_reason_with_gpt(final_decision, df, api_key):
         response = openai.ChatCompletion.create(
             model="gpt-3.5-turbo",
             messages=[
-                {"role": "system", "content": "리뷰 분석을 돕는 역할을 해."},
-                {"role": "user", "content": f"다음은 최종 구매 결정과 분석결과들인데 최종 구매 결정이 '추천'이면 긍정인 분석결과들을 50자 이내로 요약해주고, 최종 구매 결정이 '비추천'이면 부정인 분석결과들을 한 줄로 요약해줘. 최종 구매 결정 : {final_decision}, 분석결과들 : '{df['리뷰 분석']}', 그리고 출력 시 다른 말은 덧붙이지 말고 요약한 내용만 출력해줘."}
+                {"role": "system", "content": "리뷰 분석을 돕는 역할을 해주세요."},
+                {"role": "user", "content": f"다음은 최종 구매 결정과 분석결과들입니다. 최종 구매 결정이 '추천'이면 긍정인 분석결과들을 50자 이내로 한 줄로 요약해주고, 최종 구매 결정이 '비추천'이면 부정인 분석결과들을 50이내 한 줄로 요약해주세요. 최종 구매 결정 : {final_decision}, 분석결과들 : '{df['리뷰 분석']}', 출력 시 다른말은 덧붙이지 말고 요약된 이유만 출력"}
             ],
             max_tokens=100
         )
         print(f"이유 : {response['choices'][0]['message']['content']}")
+        return f"이유 : {response['choices'][0]['message']['content']}"
     except Exception as e:
         print(f"API 요청 중 오류 발생: {e}")
         return "분석 오류"
@@ -101,7 +102,7 @@ def run_review_analysis():
     print("최종 구매 결정:", final_decision)
 
     # 이유 요약 및 출력.
-    show_reason_with_gpt(final_decision, df, api_key)
+    reason = show_reason_with_gpt(final_decision, df, api_key)
 
     # 결과를 저장할 디렉토리 생성
     if not os.path.exists('Reviews-analysis'):
@@ -110,6 +111,8 @@ def run_review_analysis():
     # 결과 저장
     output_file = "Reviews-analysis/analyzed_reviews.xlsx"
     save_analysis_to_excel(df, output_file)
+
+    return "최종 구매 결정 : " + final_decision + ", \n" + reason
 
 # 실행
 if __name__ == "__main__":
