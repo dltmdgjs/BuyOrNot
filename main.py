@@ -19,7 +19,7 @@ if st.button("분석 시작"):
             coupang.start(url)
 
             # 분석 실행 및 GPT 결과 출력
-            gpt_response = run_review_analysis()  # run_review_analysis에서 show_reason_with_gpt 호출 포함
+            gpt_response = run_review_analysis()
             if gpt_response:
                 st.success("최종 구매 결정 및 이유")
                 st.info(gpt_response)
