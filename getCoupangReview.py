@@ -49,7 +49,7 @@ class Coupang:
     def __init__(self) -> None:
         self.base_review_url: str = "https://www.coupang.com/vp/product/reviews"
         self.sd = SaveData()
-        self.retries = 2
+        self.retries = 10
         # 웹 드라이버 헤더 정보(사이트 차단 방지)
         self.headers = {
             "accept": "*/*",
