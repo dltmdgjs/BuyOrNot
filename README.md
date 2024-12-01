@@ -5,7 +5,7 @@
 - Buy Or Not? 프로그램은 우리나라 인기 쇼핑몰 사이트인 쿠팡(Coupang)의 제품 리뷰를 크롤링하여, gpt모델을 사용해 구매 의사를 돕는 프로그램입니다.
 - 프로그램을 실행하여 제품의 url을 넣어보세요. gpt가 대신 결정해줄 겁니다.
 
-## 프로그램 실행 화면
+## 프로그램 실행 화면 1
 - (vscode의 터미널 창을 통해 실행한 화면입니다.)
 
 ### 실행 첫 화면(제품 url 입력)
@@ -31,7 +31,20 @@
 
 - time out으로 인해 실패한 화면
 
+## 프로그램 실행 화면 2
+- (streamlit을 통해 실행한 웹화면입니다.)
 
+### 실행 - 터미널에 입력
+```
+streamlit run "main.py 경로"
+```
+(사진 넣기1 - 터미널 화면)
+(사진 넣기2 - 첫웹화면)
+
+### URL 입력
+(사진 넣기3 - url 입력 화면)
+### 결과 출력
+(사진 넣기4 - 결과 화면)
 
 
 ## GPT API 키
@@ -65,7 +78,7 @@ from dotenv import load_dotenv
 load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
-# GPT 모델을 사용하여 리뷰 분석 함수
+# GPT 모델을 사용 리뷰 분석 함수 - 예시
 def analyze_review(review_text):
     try:
         response = openai.Completion.create(
@@ -98,6 +111,7 @@ def analyze_review(review_text):
 
 ## References
 [JaehyoJJAng](https://github.com/JaehyoJJAng/Coupang-Review-Crawling/tree/main)
+[OPENAI API](https://openai.com/index/openai-api/)
 
 ## License
 MIT License
