@@ -38,15 +38,15 @@
 ```
 streamlit run "main.py 경로"
 ```
-<img width="736" alt="img6" src="https://github.com/user-attachments/assets/50c307b2-71e2-4529-8e9a-92f7fc937bed">  
+<img width="700" alt="img6" src="https://github.com/user-attachments/assets/50c307b2-71e2-4529-8e9a-92f7fc937bed">  
 
-<img width="1267" alt="img7" src="https://github.com/user-attachments/assets/b1933fc6-9a36-438d-9d58-e84de7a637bd">
+<img width="700" alt="img7" src="https://github.com/user-attachments/assets/b1933fc6-9a36-438d-9d58-e84de7a637bd">
 
 ### URL 입력
-<img width="1267" alt="img8" src="https://github.com/user-attachments/assets/2bf3e878-3809-450f-8e49-913b4ed49141">  
+<img width="700" alt="img8" src="https://github.com/user-attachments/assets/2bf3e878-3809-450f-8e49-913b4ed49141">  
 
 ### 결과 출력
-<img width="1261" alt="img9" src="https://github.com/user-attachments/assets/4cc931cc-dc12-4eea-bef8-e9e6223cbe49">  
+<img width="700" alt="img9" src="https://github.com/user-attachments/assets/4cc931cc-dc12-4eea-bef8-e9e6223cbe49">  
 
 
 ## GPT API 키
