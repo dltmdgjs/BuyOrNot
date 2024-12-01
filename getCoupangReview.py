@@ -81,6 +81,7 @@ class Coupang:
     
     def start(self, url) -> None:
         self.sd.create_directory()
+        # URL: str = self.input_review_url()
         URL: str = url
         self.headers["Referer"] = URL
         prod_code: str = self.get_product_code(url=URL)
