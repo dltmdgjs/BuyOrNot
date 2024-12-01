@@ -35,7 +35,7 @@
 - (streamlit을 통해 실행한 웹화면입니다.)
 
 ### 실행 - 터미널에 입력
-```
+```bash
 streamlit run "main.py 경로"
 ```  
 
@@ -60,7 +60,7 @@ streamlit run "main.py 경로"
 
 ### 2. 프로젝트에 openai 라이브러리 설치
 
-```
+```bash
 pip install openai python-dotenv
 ```
 
@@ -71,7 +71,7 @@ OPENAI_API_KEY="your_openai_api_key"
 
 ### 4. GPT 모델 연동 및 리뷰 분석 코드 작성
 
-```
+```python
 import openai
 import pandas as pd
 import os
