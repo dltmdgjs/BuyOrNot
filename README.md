@@ -103,7 +103,7 @@ def analyze_review(review_text):
 - .env 파일로부터 api키를 불러와 저장
 - max_tokens 값을 증가시켜 gpt의 답변 길이를 늘릴 수 있음.
 
-## 크롤링 코드
+## 크롤링
 [JaehyoJJAng](https://github.com/JaehyoJJAng/Coupang-Review-Crawling/tree/main)
 - 리뷰 크롤링은 위를 참조 및 변경하였음.
 
