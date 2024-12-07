@@ -69,7 +69,7 @@ pip install openai python-dotenv
 OPENAI_API_KEY="your_openai_api_key"
 ```
 
-### 4. GPT 모델 연동 및 리뷰 분석 코드 작성
+### 4. GPT 모델 연동 및 리뷰 분석 코드 작성 (예시)
 
 ```python
 import openai
